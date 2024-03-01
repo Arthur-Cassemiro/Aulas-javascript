@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+
+<body>
+
+	<script >
+	var numero1 = prompt("Digite o primeiro número:");
+	var numero2 = prompt("Digite o segundo número:");
+	var operacao = prompt("Escolha entre soma ou subtração:");
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
+
+	function calculo(num1, num2, operacao){
+		if (operacao ==="soma") {
+			return num1+num2;
+		}
+		else if (operacao ==="subtração") {
+			return num1-num2;
+		}
+		else{
+			return "Entrada incorreta."
+		}
+	}
+
+	document.write("O resultado é: "+calculo(numero1, numero2, operacao));
+	</script>
+</body>
+</html>

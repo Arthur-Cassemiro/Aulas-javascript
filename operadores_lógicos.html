@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<body>
+
+	<h1>Web aprovação</h1>
+
+	<script>
+
+		var nota1 = prompt("Digite a primeira nota: ")
+		var nota2 = prompt("Digite a segunda nota: ")
+		var faltas = prompt ("Digite o número de faltas: ")
+		
+		nota1 = parseInt(nota1)
+		nota2 = parseInt(nota2)
+		faltas = parseInt(faltas)
+		var media_aluno = (nota1+nota2)/2
+		var media = 7
+		var faltas_max = 15
+
+		if (media_aluno >= media && faltas <= faltas_max) {
+			document.write('Parabéns, você foi aprovado! <br/>')
+			document.write('Sua média é: '+ media_aluno)
+		}
+		else if (media_aluno >= media && faltas > faltas_max){
+			document.write('Você foi reprovado por faltas. <br/>')
+			document.write('Sua média é: '+ media_aluno)
+		}
+
+		else if (media_aluno <= media && faltas <= faltas_max) {
+			document.write('Você foi reprovado pela média. <br/>')
+			document.write('Sua média é: '+ media_aluno)
+		}
+
+		else if (media_aluno <= media && faltas >= faltas_max) {
+			document.write('Você foi reprovado por falta e pela média. <br/>')
+			document.write('Sua média é: '+ media_aluno)
+		}
+
+		var resultado = (media_aluno >= media && faltas <= faltas_max) ? 'aprovado' : 'reprovado'
+		document.write('<br/>'+resultado)
+
+	</script>
+</body>
+</html>

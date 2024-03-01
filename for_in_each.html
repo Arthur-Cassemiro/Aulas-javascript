@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+	</style>
+</head>
+
+<body>
+
+	<script>
+
+		var lista_convidados = ["Jorge", "João", "Pedro", "Ana", "Maria"]
+		
+		for(x in lista_convidados){
+			document.write(x)
+		}
+
+		var f = function(valor, indice, array){
+			console.log('indice: ' + indice + ' | valor: ' + valor)
+		}
+
+		lista_convidados.forEach(f)
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+
+<body>
+
+	<script >
+	var data = new Date()
+
+
+	//document.write(data.getDate()+'/'+ (data.getMonth()+1)+'/'+ data.getFullYear())
+	/*
+	document.write(data.toString())
+	data.setDate(data.getDate()+37)
+	document.write('<hr/>')
+	document.write(data.toString())
+
+	document.write('<hr/>')
+	document.write(data.toString())
+	data.setMonth(data.getMonth()+3)
+	document.write('<hr/>')
+	document.write(data.toString())
+
+	document.write('<hr/>')
+	document.write(data.toString())
+	data.setFullYear(data.getFullYear()+3)
+	document.write('<hr/>')
+	document.write(data.toString())
+	*/
+
+	var data1 = new Date(2021 , 0, 15)
+	var data2 = new Date(2021 , 1, 23)
+
+	document.write(data1.toString())
+	document.write('<hr/>')
+	document.write(data2.toString())
+
+	document.write('<br/> <br/> <hr/>')
+
+	document.write(data1.getTime())
+	document.write('<hr/>')
+	document.write(data2.getTime())
+	document.write('<br/> <br/> <hr/>')
+	document.write(data2.getTime()-data1.getTime())
+	document.write('<br/> <br/> <hr/>')
+
+	var milsegdatas = data2.getTime()-data1.getTime()
+	var milsegdia = 24*60*60*1000
+	document.write(milsegdatas/ milsegdia)
+	</script>
+</body>
+</html>
